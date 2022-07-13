@@ -1,0 +1,28 @@
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+.icon-fb-footer {
+  width: 0.5498046875em;
+}
+
+.icon-ld-footer {
+  width: 0.9287109375em;
+}
+
+.icon-tw-footer {
+  width: 1.111328125em;
+}
