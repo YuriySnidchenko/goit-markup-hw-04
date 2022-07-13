@@ -300,9 +300,6 @@ footer a {
     padding-bottom: 10px;
 }
 
-.advantage-padding {
-    width: 270px;
-}
 
 .svg {
     padding: 25 102;
@@ -311,9 +308,12 @@ footer a {
 
 .svg-container {
     /* DIV - icons*/
-    border: 0px;
-    padding: 25 102;
-    outline: 1px solid red;
+    width: 270px;
+    height: 120px;
+    text-align: center;
+
+    background: #F5F4FA;
+    border-radius: 4px var(--bg-gray-color);
 }
 
 .svg-icons {
@@ -327,6 +327,8 @@ footer a {
     margin-right: 30px;
 }
 
+
+
 .advantage-discription {
     color: var(--secondary-color);
     font-weight: 400;
@@ -335,10 +337,12 @@ footer a {
 }
 
 .advantage-padding {
-    justify-content: space-around;
-
+    width: 270px;
 }
 
+.centr {
+    text-align: center;
+}
 
 /*--------------------- ABOUT  ----------------*/
 .section.about {
