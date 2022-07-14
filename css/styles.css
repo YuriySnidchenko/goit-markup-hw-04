@@ -299,7 +299,9 @@ footer a {
 
 .svg {
     padding: 25 102;
-    background-color: aqua;
+    fill: currentColor;
+    width: 106;
+    height: 60;
 }
 
 .svg-container {
@@ -473,9 +475,17 @@ footer a {
 }
 
 .border-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
     margin: 0px;
     border: 2px;
     border-color: rgba(175, 177, 184, 1);
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    color: #afb1b8;
 }
 
 /* .border-logo:not(:last-child) {
@@ -485,8 +495,6 @@ footer a {
 .clients-list {
     width: 170px;
     height: 92px;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
     margin-right: 30px;
 }
 
@@ -495,14 +503,14 @@ footer a {
 }
 
 .logo-size {
-    width: 100%;
-    height: 100%;
-    fill: #afb1b8;
+    width: 106px;
+    height: 60px;
+    fill: currentColor;
 }
 
-.logo-size:hover,
-.logo-size:focus {
-    fill: var(--btn-color);
+.border-logo:hover,
+.border-logo:focus {
+    color: var(--btn-color);
     border-color: var(--btn-color);
 }
 
@@ -515,6 +523,7 @@ footer a {
 
 .flexbox {
     display: flex;
+    align-items: baseline;
 }
 
 .footer-contacts {
@@ -543,11 +552,9 @@ footer a {
     text-transform: uppercase;
 }
 
-.footer-list:not(last-child) {
+.footer-list::not(last-child) {
     margin-bottom: 9px;
 }
-
-
 
 .contact-second {
     display: flex;
@@ -559,19 +566,38 @@ footer a {
     align-items: center;
 }
 
+.footer-second:not(last-child) {
+    margin-right: 10px;
+}
+
 .footer-ul {
     display: flex;
 }
 
 .footer-icons {
+    /* --- Ссылке добавили свойства---- */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 44px;
     height: 44px;
-    outline: 1px solid red;
+    color: var(--white-color);
+    /* outline: 1px solid red; */
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
 }
+
+
+.footer-icons:hover,
+.footer-icons:focus {
+    background: #2196F3;
+}
+
 
 .footer-icons2 {
     width: 20px;
     height: 20px;
+    fill: currentColor;
 }
 
 /* .footer-icons-link --- Отдельный контейнер */
