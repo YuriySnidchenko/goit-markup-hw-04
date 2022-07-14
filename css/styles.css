@@ -355,6 +355,10 @@ footer a {
     padding: 0;
 }
 
+.team-li-li {
+    display: flex;
+}
+
 /*--------------------- Блок - команда ----------------*/
 
 .section.team {
@@ -373,8 +377,8 @@ footer a {
     padding: 0;
     border: none;
     margin-right: 10px;
-    width: 40px;
-    height: 40px;
+    width: 44px;
+    height: 44px;
     background-color: white;
     text-align: center;
 }
@@ -396,13 +400,14 @@ footer a {
     fill: gray;
 }
 
-.team-icons:hover {
+.team-link:hover .team-icons {
     fill: white;
 }
 
 .team-list {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
 }
 
 .team-name {
@@ -418,6 +423,7 @@ footer a {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
+    padding-bottom: 16px;
 }
 
 .team-decor {
@@ -433,7 +439,6 @@ footer a {
     background-color: #fff;
     border-radius: 0px 0px 4px 4px;
     line-height: 1.1;
-    height: 100px;
     padding: 30px;
     justify-content: center;
 }
