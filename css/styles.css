@@ -266,6 +266,8 @@ footer a {
 }
 
 .hero-btn {
+    font-family: inherit;
+    font-family: 700;
     min-width: 200px;
     color: var(--white-color);
     background-color: var(--btn-color);
@@ -290,12 +292,12 @@ footer a {
 }
 
 .advantage-title {
+    font-size: 14px;
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
-
 
 .svg {
     padding: 25 102;
@@ -431,12 +433,13 @@ footer a {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
-    padding-bottom: 16px;
+    margin-bottom: 16px;
 }
 
 .team-decor {
     box-shadow: 0px 2px 1px rgb(0 0 0 / 20%);
     margin-right: 30px;
+    max-width: 270px;
 }
 
 .team-decor:last-child {
