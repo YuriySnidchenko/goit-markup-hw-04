@@ -502,12 +502,17 @@ footer a {
 
 /*--------------------- футер ----------------*/
 
-footer {
+.footer {
+    padding: 60px 0;
     background-color: var(--bg-black-color);
 }
 
-.footer {
-    padding: 60px 0;
+.flexbox {
+    display: flex;
+}
+
+.footer-contacts {
+    margin-right: 70px;
 }
 
 .footer>.logo {
@@ -542,10 +547,6 @@ footer {
 }
 
 /* ------------Footer - contacts ----------- */
-
-.contact {
-    display: flex;
-}
 
 .contact-map {
     font-weight: 400;
