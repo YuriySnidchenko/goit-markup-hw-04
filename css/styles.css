@@ -142,7 +142,7 @@ footer a {
     width: 15px;
     height: 12px;
     /* outline: 1px solid black; */
-    fill: var(--secondary-color);
+    fill: currentColor;
 }
 
 .phone {
@@ -150,17 +150,7 @@ footer a {
     width: 15px;
     height: 16px;
     /* outline: 1px solid black; */
-    fill: var(--secondary-color);
-}
-
-.mail:hover,
-.mail:focus {
-    fill: var(--btn-color);
-}
-
-.phone:hover,
-.phone:focus {
-    fill: var(--btn-color);
+    fill: currentColor;
 }
 
 .header-list {
@@ -308,12 +298,14 @@ footer a {
 
 .svg-container {
     /* DIV - icons*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 270px;
     height: 120px;
-    text-align: center;
-
     background: #F5F4FA;
-    border-radius: 4px var(--bg-gray-color);
+    border-radius: 4px;
+    margin-bottom: 30px;
 }
 
 .svg-icons {
@@ -326,7 +318,6 @@ footer a {
 .advantage-padding:not(:last-child) {
     margin-right: 30px;
 }
-
 
 
 .advantage-discription {
@@ -353,6 +344,7 @@ footer a {
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .pictures-line {
@@ -443,6 +435,7 @@ footer a {
     line-height: 1.1;
     height: 100px;
     padding: 30px;
+    justify-content: center;
 }
 
 .team.photo {
