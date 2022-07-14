@@ -41,6 +41,12 @@ html {
     box-sizing: inherit;
 }
 
+.svg {
+    fill: currentColor;
+    width: 106px;
+    height: 60px;
+}
+
 /* Класс для обнуления базовых свойств у списков (ul) */
 .list {
     list-style: none;
@@ -519,17 +525,42 @@ footer a {
     margin: 0 0 20px 0;
 }
 
-.footer-list {
+.footer-second {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 44px;
     height: 44px;
+}
 
+.footer-title {
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 }
 
 .footer-list:not(last-child) {
     margin-bottom: 9px;
+}
+
+
+
+.contact-second {
+    display: flex;
+}
+
+.footer-second {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-ul {
+    display: flex;
 }
 
 .footer-icons {
@@ -541,10 +572,9 @@ footer a {
 .footer-icons2 {
     width: 20px;
     height: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
+
+/* .footer-icons-link --- Отдельный контейнер */
 
 /* ------------Footer - contacts ----------- */
 
@@ -567,9 +597,7 @@ footer a {
 
 /* ------------Footer - contacts ----------- */
 
-.contact {
-    display: flex;
-}
+/* .contact {}  Footer - на УЛ в первом ДИВЕ */
 
 .contact-map {
     font-weight: 400;
