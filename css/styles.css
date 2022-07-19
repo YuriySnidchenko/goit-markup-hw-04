@@ -245,6 +245,7 @@ footer a {
 }
 
 .contact-link {
+    display: flex;
     margin: auto;
     font-weight: 500;
     line-height: 1.14;
@@ -289,7 +290,7 @@ footer a {
 
 .hero-btn {
     font-family: inherit;
-    font-family: 700;
+    font-weight: 700;
     min-width: 200px;
     color: var(--white-color);
     background-color: var(--btn-color);
@@ -838,29 +839,76 @@ footer a {
     color: #757575;
 }
 
-.btn-active {
+/*== МОДАЛЬНЕ Вікно ===*/
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal {
     position: absolute;
     top: 50%;
     left: 50%;
+
     min-width: 528px;
     min-height: 581px;
-    background-color: var(--main-white-color);
+
+    background-color: var(--white-color);
     border-radius: 4px;
-    box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+
     transform: translate(-50%, -50%) scale(1);
     transition: transform var(--time-animation) var(--cubic-bezier);
-    outline: 2px solid red;
+}
+
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.modal .button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 30px;
+    height: 30px;
+
+    background-color: var(--white-color);
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
 }
 
 .btn-modal {
-    display: display;
     position: absolute;
-    right: 0;
-    top: 0;
-    transform: translate(50%, -50%);
-    background-color: blue;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: var(--white-color);
     border-radius: 50%;
-
-    outline: 2px solid red;
-
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
